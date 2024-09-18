@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106075_Muhammad Fathir Rahman_POSTTEST2"/>
+        <attribute name="authors" value="Sei"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-18 07:50:17 PM"/>
+        <attribute name="created" value="U2VpO0hQOzIwMjQtMDktMTc7MTE6MjM6NTYgUE07MTcyOA=="/>
+        <attribute name="edited" value="U2VpO0hQOzIwMjQtMDktMTg7MDc6NTA6MTcgUE07MzsxODQx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="JumlahBarang" type="Integer" array="False" size=""/>
+            <declare name="HargaBarang, DiskonDalamPersen, TotalHargaSebelumDiskon, TotalDiskon, TotalHargaSetelahDiskon, SisaDiskon" type="Real" array="False" size=""/>
+            <declare name="NamaBarang" type="String" array="False" size=""/>
+            <output expression="&quot;Beli Apa Bang&quot;" newline="True"/>
+            <input variable="NamaBarang"/>
+            <output expression="&quot;Berapa Harganya&quot;" newline="True"/>
+            <input variable="HargaBarang"/>
+            <output expression="&quot;Beli Berapa&quot;" newline="True"/>
+            <input variable="JumlahBarang"/>
+            <output expression="&quot;Masukkan Diskon Sesuai NIM&quot;" newline="True"/>
+            <input variable="DiskonDalamPersen"/>
+            <assign variable="TotalHargaSebelumDiskon" expression="JumlahBarang * HargaBarang"/>
+            <assign variable="TotalDiskon" expression="(DiskonDalamPersen/100) * TotalHargaSebelumDiskon"/>
+            <assign variable="TotalHargaSetelahDiskon" expression="TotalHargaSebelumDiskon - TotalDiskon"/>
+            <assign variable="SisaDiskon" expression="DiskonDalamPersen%3"/>
+            <output expression="&quot;Kamu Telah Membeli&quot;&amp;&quot; &quot; &amp; &quot; &quot;&amp; JumlahBarang&amp;&quot; &quot;&amp;&quot; &quot;&amp; NamaBarang&amp;&quot; &quot; &amp; &quot; &quot;&amp;&quot;yang dimana harga satuannya adalah&quot;&amp;&quot; &quot; &amp;&quot;RP.&quot;&amp; HargaBarang &amp;&quot;,&quot;&amp;&quot; &quot;&amp; &quot;Total harga adalah&quot;&amp;&quot; &quot;&amp;&quot;RP.&quot;&amp;TotalHargaSebelumDiskon&amp;&quot; &quot;&amp;&quot;yang dimana kamu mendapatkan potongan sebesar&quot;&amp;&quot; &quot;&amp;&quot;RP.&quot;&amp;TotalDiskon&amp;&quot;,&quot;&amp;&quot; &quot;&amp;&quot;Harga yang perlu kamu bayar adalah RP.&quot;&amp;TotalHargaSetelahDiskon" newline="True"/>
+            <output expression="DiskonDalamPersen&amp;&quot; &quot;&amp;&quot;Dibagi dengan 3 sisanya menjadi&quot;&amp;&quot; &quot;&amp;SisaDiskon" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
