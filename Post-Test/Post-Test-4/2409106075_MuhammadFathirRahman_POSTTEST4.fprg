@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106075_MuhammadFathirRahman_POSTTEST4"/>
+        <attribute name="authors" value="Sei"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-02 09:42:19 PM"/>
+        <attribute name="created" value="U2VpO0hQOzIwMjQtMTAtMDI7MDM6MjM6NDkgUE07MTcxNw=="/>
+        <attribute name="edited" value="U2VpO0hQOzIwMjQtMTAtMDI7MDk6NDI6MTkgUE07NDsxODMy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Username, Password, salah" type="String" array="False" size=""/>
+            <output expression="&quot;Anda hanya mempunyai 3 kali kesempatan&quot;" newline="True"/>
+            <output expression="&quot;Masukkan Username anda&quot;" newline="True"/>
+            <input variable="Username"/>
+            <output expression="&quot;Masukkan Password anda&quot;" newline="True"/>
+            <input variable="Password"/>
+            <if expression="Username=&quot;Fathir&quot; and Password=&quot;75&quot;">
+                <then>
+                    <output expression="&quot;Selamat anda berhasil login&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Maaf Username atau Password salah silahkan coba lagi&quot;" newline="True"/>
+                    <output expression="&quot;kesempatan anda tinggal 2 kali&quot;" newline="True"/>
+                    <output expression="&quot;Masukkan Username anda&quot;" newline="True"/>
+                    <input variable="Username"/>
+                    <output expression="&quot;Masukkan Password anda&quot;" newline="True"/>
+                    <input variable="Password"/>
+                    <if expression="Username=&quot;Fathir&quot; and Password=&quot;75&quot;">
+                        <then>
+                            <output expression="&quot;Selamat anda berhasil login&quot;" newline="True"/>
+                            <output expression="&quot;kamu salah 1 kali&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Maaf Username atau Password salah silahkan coba lagi&quot;" newline="True"/>
+                            <output expression="&quot;Kesempatan anda tinggal sekali&quot;" newline="True"/>
+                            <output expression="&quot;Masukkan Username anda&quot;" newline="True"/>
+                            <input variable="Username"/>
+                            <output expression="&quot;Masukkan Password anda&quot;" newline="True"/>
+                            <input variable="Password"/>
+                            <if expression="Username=&quot;Fathir&quot; and Password=&quot;75&quot;">
+                                <then>
+                                    <output expression="&quot;Selamat anda berhasil login&quot;" newline="True"/>
+                                    <output expression="&quot;kamu salah 2 kali&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Maaf login anda gagal&quot;" newline="True"/>
+                                    <output expression="&quot;kamu salah 3 kali&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
